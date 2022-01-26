@@ -21,7 +21,8 @@ export default new Vuex.Store({
     },
     newLottery: [],
     list: [],
-    photos: []
+    photos: [],
+    blacklist: []
   },
   mutations: {
     setClearConfig(state) {
@@ -87,6 +88,10 @@ export default new Vuex.Store({
     },
     setPhotos(state, photos) {
       state.photos = photos;
+    },
+    setBlacklist(state, list) {
+      state.blacklist = list;
+      setData('blacklist', list);
     }
   },
   actions: {},

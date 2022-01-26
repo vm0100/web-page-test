@@ -177,7 +177,6 @@ class LuckydrawIndecDB {
     DBOpenRequest.onsuccess = () => {
       // 存储数据结果
       db = DBOpenRequest.result;
-      console.log('db-connection-success');
     };
 
     DBOpenRequest.onupgradeneeded = () => {

@@ -5,6 +5,7 @@
     width="390px"
     @close="$emit('update:visible', false)"
     class="c-LotteryConfig"
+    :close-on-click-modal="false"
   >
     <div class="c-LotteryConfigtitle" slot="title">
       <span :style="{ fontSize: '16px', marginRight: '20px' }">
